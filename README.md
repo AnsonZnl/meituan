@@ -1,2 +1,10 @@
 # meituan
-vue + koa + nuxt + mongodb
+> Vue + Koa + Nuxt + Mongodb&Redis
+
+## notes
+
+### Vue
+### Koa
+### Mongodb&Redis
+### Nuxt 
+
