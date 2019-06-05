@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <Com :age="agez"/> -->
+      <Vuexx/>
+
   </div>
+  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import Com from './components/com'
+import Vuexx from './components/vuex'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Com,
+    Vuexx
+  },
+  data() {
+    return {
+      agez: 14
+    }
   }
 }
 </script>
