@@ -2,6 +2,7 @@ const router = require('koa-router')()
 
 router.get('/', async (ctx, next) => {
   console.log('get index success')
+  ctx.cookies.set('pvid',Math.random())
   await ctx.render('index', {
     title: 'Hello Koa 2!'
   })
@@ -13,9 +14,11 @@ router.get('/string', async (ctx, next) => {
 
 router.get('/json', async (ctx, next) => {
   ctx.body = {
-    title: 'koa2 json'
+    title: 'koa2 json',
+    cookie: ctx.cookies.get('pvid')
   }
 })
+
 
 router.get('/testAsync',async (ctx)=>{
   global.console.log('now time'+ new Date().getTime());
